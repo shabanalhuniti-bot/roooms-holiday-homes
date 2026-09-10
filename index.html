@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9VHQ9KPL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-ZW9VHQ9KPL");
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roooms, From Empty Apartment to Fully Furnished Home in 14 Days</title>
@@ -686,7 +694,7 @@ const isoTotal=isoSlides.length;let isoCurrent=0;
 function isoUpdate(){const d=isoSlides[isoCurrent];document.getElementById('iso-track').style.transform=`translateX(-${isoCurrent*100}%)`;document.getElementById('iso-step').textContent=d.step;document.getElementById('iso-name').textContent=d.name;document.getElementById('iso-en').textContent=d.en;document.getElementById('iso-desc').textContent=d.desc;document.getElementById('iso-counter').textContent=`0${isoCurrent+1} / 0${isoTotal}`;document.getElementById('iso-progress').style.width=`${((isoCurrent+1)/isoTotal)*100}%`;document.querySelectorAll('.iso-dot').forEach((dot,i)=>dot.classList.toggle('active',i===isoCurrent));}
 function isoNav(dir){isoCurrent=(isoCurrent+dir+isoTotal)%isoTotal;isoUpdate();}
 function isoGo(i){isoCurrent=i;isoUpdate();}
-const galleryImgs=[{src:'Living_Room.png',label:'Living Room'},{src:'Bedroom.png',label:'Bedroom'},{src:'Living_Room_Alternate.png',label:'Living Room, With Lighting'},{src:'Dining_Area.png',label:'Dining Area'},{src:'Living_Room_-_Detail.png',label:'Living Room, Detail'},{src:'Living_Room_Detail.png',label:'Living Room, TV Area'},{src:'Dining_Area_Detail.png',label:'Dining Area, Detail'},{src:'Bedroom_Detail.png',label:'Bedroom, Detail'}];
+const galleryImgs=Array.from(document.querySelectorAll('.g-item')).map(item=>({src:item.querySelector('img').src,label:item.querySelector('.g-label').textContent}));
 let lbCurrent=0;
 function openLightbox(i){lbCurrent=i;document.getElementById('lightbox-img').src=galleryImgs[i].src;document.getElementById('lightbox-counter').textContent=`${i+1} / ${galleryImgs.length}, ${galleryImgs[i].label}`;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
 function closeLightbox(e){if(!e||e.target===document.getElementById('lightbox')){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}}
