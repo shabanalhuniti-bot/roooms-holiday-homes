@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9VHQ9KPL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-ZW9VHQ9KPL");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How to run your own holiday home in Abu Dhabi | Roooms</title>
+<meta name="description" content="The complete, honest guide to running your own holiday home in Abu Dhabi: location, licence, insurance, furnishing, photos, listing, pricing, guests, cleaning and maintenance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#1A6B6B;
+  --ink:#0E3B3B;
+  --cyan:#28fcff;
+  --mist:#EAF3F2;
+  --paper:#F7FAF9;
+  --text:#1D2B2B;
+  --muted:#5A6E6E;
+  --line:#D5E4E2;
+  --warn:#B4532A;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* top bar: same structure as the other holiday homes pages */
+.top{background:var(--ink);padding-top:env(safe-area-inset-top,0px);position:relative}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff}
+.logo-shell{width:22px;height:22px;opacity:.85;flex-shrink:0}
+.logo-full{display:flex;flex-direction:column;align-items:flex-start}
+.logo-text{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:.03em;line-height:1}
+.logo-rule{width:100%;height:1.5px;background:var(--cyan);opacity:.6;margin:3px 0 2px}
+.logo-sub{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:#9DBDBA}
+.top nav{display:flex;align-items:center}
+.top nav a{color:#CFE3E1;text-decoration:none;font-size:14px;margin-left:24px}
+.top nav a:hover,.top nav a[aria-current="page"]{color:#fff}
+.top nav a[aria-current="page"]{border-bottom:2px solid var(--cyan);padding-bottom:2px}
+.right{display:flex;align-items:center}
+.cta-small{color:var(--ink);background:var(--cyan);padding:9px 18px;border-radius:999px;font-weight:600;font-size:13.5px;text-decoration:none;margin-left:24px}
+.nav-toggle-checkbox{display:none}
+.nav-toggle-label{display:none;flex-direction:column;justify-content:center;gap:4px;width:22px;height:18px;cursor:pointer;margin-left:16px}
+.nav-toggle-label span{display:block;height:2px;width:100%;background:#fff;border-radius:2px}
+.nav-dropdown{display:none}
+@media(max-width:860px){
+  .top nav{display:none}
+  .nav-toggle-label{display:flex}
+  .nav-dropdown{position:absolute;top:100%;left:0;right:0;background:var(--ink);border-top:1px solid #2B5C5C;flex-direction:column;padding:8px 24px 16px;z-index:100}
+  .nav-toggle-checkbox:checked ~ .nav-dropdown{display:flex}
+  .nav-dropdown a{padding:12px 0;border-bottom:1px solid #2B5C5C;font-size:15px;color:#CFE3E1;text-decoration:none}
+  .nav-dropdown a:last-child{border-bottom:none}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:56px 0 64px;overflow:hidden}
+.hero h1{font-size:clamp(34px,5.6vw,64px);line-height:1.04;letter-spacing:-.03em;font-weight:800;margin:0 0 20px;max-width:15ch}
+.hero p.lead{font-size:19px;color:#CFE3E1;max-width:58ch;margin:0 0 36px}
+.route{display:flex;gap:6px;align-items:flex-end;margin:0 0 14px}
+.route .seg{flex:1;min-width:0;height:10px;border-radius:3px;background:#2B5C5C}
+.route .seg.on{background:var(--cyan);height:18px;box-shadow:0 0 18px rgba(40,252,255,.45)}
+.route-names{display:flex;gap:6px;font-size:12px;color:#9DBDBA}
+.route-names span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:720px){.route-names{display:none}}
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#CFE3E1;margin-top:16px}
+.legend i{display:inline-block;width:18px;height:8px;border-radius:2px;vertical-align:middle;margin-right:8px;background:#2B5C5C}
+.legend i.on{background:var(--cyan)}
+
+/* intro */
+.intro{padding:56px 0 8px}
+.intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:820px){.intro .wrap{grid-template-columns:1fr;gap:20px}}
+.intro h2{font-size:30px;line-height:1.2;letter-spacing:-.02em;margin:0}
+.intro p{margin:0 0 14px;color:var(--muted)}
+
+/* steps */
+.steps{padding:40px 0 24px}
+.step{display:grid;grid-template-columns:72px 1fr 280px;gap:32px;padding:40px 0;border-top:1px solid var(--line)}
+@media(max-width:920px){.step{grid-template-columns:56px 1fr}.effort{grid-column:2}}
+@media(max-width:560px){.step{grid-template-columns:1fr;gap:12px}.effort{grid-column:1}}
+.num{font-size:44px;font-weight:800;color:var(--teal);letter-spacing:-.04em;line-height:1}
+.step h3{font-size:25px;line-height:1.25;letter-spacing:-.015em;margin:0 0 12px}
+.step p{margin:0 0 12px}
+.step ul{margin:0 0 12px;padding-left:20px}
+.step li{margin-bottom:6px}
+.stuck{border-left:3px solid var(--warn);padding:4px 0 4px 14px;color:#6B3A22;font-size:15.5px;margin-top:16px}
+.stuck strong{color:var(--warn)}
+.tip{background:var(--mist);border-radius:8px;padding:12px 16px;font-size:15.5px;margin-top:16px}
+.tip strong{color:var(--teal)}
+.effort{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;align-self:start;font-size:15px}
+.effort dt{color:var(--muted);font-size:13px;margin-top:12px}
+.effort dt:first-child{margin-top:0}
+.effort dd{margin:2px 0 0;font-weight:600}
+.freq{display:inline-block;padding:3px 10px;border-radius:999px;font-size:13px;font-weight:600;background:var(--mist);color:var(--teal)}
+.freq.forever{background:var(--ink);color:var(--cyan)}
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0}
+.area{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:14.5px;line-height:1.5}
+.area b{display:block;font-size:15.5px;color:var(--ink)}
+
+/* reality */
+.reality{background:var(--mist);padding:64px 0}
+.reality h2,.check h2,.paths h2,.notes h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.025em;line-height:1.12;margin:0 0 14px}
+.reality p.sub,.check p.sub,.paths p.sub,.notes p.sub{color:var(--muted);max-width:60ch;margin:0 0 32px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.col{background:#fff;border-radius:10px;padding:26px}
+.col.dark{background:var(--ink);color:#fff}
+.col h3{margin:0 0 6px;font-size:20px}
+.col .big{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:8px 0 4px}
+.col.dark .big{color:var(--cyan)}
+.col p{margin:0 0 12px;font-size:15.5px}
+.col.dark p{color:#CFE3E1}
+.fine{font-size:13.5px;color:var(--muted);margin-top:18px}
+
+/* insider notes */
+.notes{background:var(--ink);color:#fff;padding:72px 0}
+.notes p.sub{color:#CFE3E1}
+.note-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+@media(max-width:760px){.note-grid{grid-template-columns:1fr}}
+.note{padding:20px 0;border-top:1px solid #2B5C5C}
+.note h3{font-size:18px;margin:0 0 6px;color:var(--cyan)}
+.note p{margin:0;color:#CFE3E1;font-size:15.5px}
+
+/* self check */
+.check{padding:72px 0}
+.qs{max-width:720px}
+.q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.q span{font-weight:500}
+.yn{display:flex;gap:8px;flex-shrink:0}
+.yn button{font:inherit;font-size:15px;font-weight:600;border:1.5px solid var(--line);background:#fff;color:var(--text);padding:8px 18px;border-radius:999px;cursor:pointer}
+.yn button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.result{max-width:720px;margin-top:28px;padding:22px 24px;border-radius:10px;background:var(--ink);color:#fff;display:none}
+.result.show{display:block}
+.result h3{margin:0 0 6px;color:var(--cyan);font-size:21px}
+.result p{margin:0;color:#CFE3E1}
+
+/* paths */
+.paths{background:var(--ink);color:#fff;padding:72px 0}
+.paths p.sub{color:#CFE3E1}
+.path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:880px){.path-grid{grid-template-columns:1fr}}
+.path{border:1px solid #2B5C5C;border-radius:10px;padding:26px;display:flex;flex-direction:column}
+.path.main{border:2px solid var(--cyan)}
+.path h3{margin:0 0 4px;font-size:21px}
+.path .who{color:#9DBDBA;font-size:14.5px;margin:0 0 16px}
+.path ul{padding-left:18px;margin:0 0 22px;color:#CFE3E1;font-size:15.5px;flex:1}
+.path li{margin-bottom:6px}
+.btn{display:inline-block;text-align:center;text-decoration:none;font-weight:700;padding:13px 20px;border-radius:8px;background:transparent;color:#fff;border:1.5px solid #4E8A88}
+.path.main .btn{background:var(--cyan);color:var(--ink);border-color:var(--cyan)}
+.btn:hover{border-color:var(--cyan)}
+.paths + footer{border-top:1px solid #2B5C5C}
+
+footer{background:#082828;color:#9DBDBA;padding:32px 0 calc(32px + env(safe-area-inset-bottom,0px));font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#CFE3E1}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <div class="wrap">
+    <a class="logo" href="holiday-homes.html">
+      <svg class="logo-shell" viewBox="0 0 24 24" fill="none" stroke="#28fcff" stroke-width="1.3"><path d="M12 3c-4 3-7 3-9 2 1 5 4 8 9 9 5-1 8-4 9-9-2 1-5 1-9-2z"/></svg>
+      <div class="logo-full">
+        <div class="logo-text">ROOOMS</div>
+        <div class="logo-rule"></div>
+        <div class="logo-sub">Holiday Homes</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Furniture</a>
+      <a href="holiday-homes.html">Holiday Homes</a>
+      <a href="real-earnings.html">Real numbers</a>
+      <a href="diy-guide.html" aria-current="page">DIY guide</a>
+      <a href="holiday-homes.html#faq">FAQ</a>
+    </nav>
+    <div class="right">
+      <a class="cta-small" href="https://wa.me/971581855442?text=Hi%2C%20I%20read%20the%20holiday%20home%20guide%20and%20have%20a%20question">WhatsApp us</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+  <div class="nav-dropdown">
+    <a href="index.html">Furniture</a>
+      <a href="holiday-homes.html">Holiday Homes</a>
+      <a href="real-earnings.html">Real numbers</a>
+      <a href="diy-guide.html" aria-current="page">DIY guide</a>
+      <a href="holiday-homes.html#faq">FAQ</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>How to run your own holiday home in Abu Dhabi</h1>
+    <p class="lead">The complete, honest guide from a team that runs holiday homes here every day. Every step from empty apartment to paying guests, how much of your time each one takes, and where most owners get it wrong.</p>
+    <div class="route" aria-hidden="true">
+      <div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div>
+      <div class="seg on"></div><div class="seg on"></div><div class="seg on"></div><div class="seg on"></div><div class="seg on"></div>
+    </div>
+    <div class="route-names" aria-hidden="true">
+      <span>Location</span><span>Licence</span><span>Safety</span><span>Furnishing</span><span>Photos</span><span>Listing</span><span>Pricing</span><span>Guests</span><span>Cleaning</span><span>Maintenance</span><span>Money</span>
+    </div>
+    <div class="legend">
+      <span><i></i>6 steps you do once</span>
+      <span><i class="on"></i>5 steps that never stop</span>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <h2>Holiday homes can earn more than a yearly lease. They also take real work.</h2>
+    <div>
+      <p>Abu Dhabi's holiday home market is growing fast, and the rules got stricter at the same time. No DCT licence means no listing, on any platform.</p>
+      <p>This guide shows you everything, including the parts most people skip. Read it, then decide how much of it you want to do yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+
+    <article class="step">
+      <div class="num">1</div>
+      <div>
+        <h3>Make sure the unit works for guests</h3>
+        <p>Start with two questions: is the unit allowed to operate as a holiday home, and will guests actually want to stay there?</p>
+        <ul>
+          <li>You rent the whole unit, never single rooms. Maximum three guests per bedroom.</li>
+          <li>Owners, joint owners and companies can apply. Tenants can too, with the owner's authorisation.</li>
+          <li>Guests book for convenience: a pool and gym, parking, and being close to the airport, beaches, attractions and event venues.</li>
+        </ul>
+        <div class="areas">
+          <div class="area"><b>Saadiyat Island</b>Beaches, museums and a quieter, upscale feel.</div>
+          <div class="area"><b>Yas Island</b>Theme parks, the F1 circuit, concerts, golf, and close to the airport.</div>
+          <div class="area"><b>Al Reem Island</b>City centre, business trips, shopping and dining.</div>
+          <div class="area"><b>Al Raha</b>Waterfront living, near Yas and the airport.</div>
+          <div class="area"><b>Masdar City</b>Near the airport, popular with business and longer stays.</div>
+        </div>
+        <p>Units that offer something special earn more: a golf course or sea view, a beachfront, a striking design, or an experience guests can't get in a hotel.</p>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> assuming any apartment will book well, without asking who will stay there and why.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>About 2 days of research</dd>
+        <dt>How often</dt><dd><span class="freq">Once</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">2</div>
+      <div>
+        <h3>Get your DCT licence and insurance</h3>
+        <p>The Department of Culture and Tourism Abu Dhabi (DCT) licenses every holiday home. You apply online, pay the fees, and the unit is inspected before you can start.</p>
+        <ul>
+          <li>Documents: title deed (or lease and owner authorisation), passport or Emirates ID, and an insurance certificate covering the unit.</li>
+          <li>Operating as a business may also require an economic licence.</li>
+          <li>The licence is renewed every year, and its number must appear on every listing.</li>
+        </ul>
+        <p>Insurance usually takes the longest. You need to find an insurer that covers holiday home use, understand what DCT requires, and compare quotes.</p>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> assuming their normal home insurance is enough. It usually isn't.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>About 1 week</dd>
+        <dt>How often</dt><dd><span class="freq">Once, then yearly</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">3</div>
+      <div>
+        <h3>Prepare the unit for inspection</h3>
+        <p>DCT checks safety, quality and amenities before approving the unit.</p>
+        <ul>
+          <li>Smoke detectors, a fire extinguisher, a fire blanket and a first aid kit.</li>
+          <li>Clear emergency information for guests.</li>
+          <li>Everything working: AC, appliances, lights, locks.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> failing the first inspection over one missing item, and losing more time waiting for the next visit.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>About 2 days</dd>
+        <dt>How often</dt><dd><span class="freq">Once, then checks</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">4</div>
+      <div>
+        <h3>Furnish for every kind of guest</h3>
+        <p>Furnishing is your biggest competitive edge. Browse Airbnb or Booking.com in any area and you'll see it: better-furnished units charge more per night, fill more nights and collect better reviews.</p>
+        <p>Your guests come from many countries and cultures, so the design has to feel welcoming to all of them, while staying durable and easy to maintain.</p>
+        <p>It is also the most demanding step. A typical apartment needs around 280 items. That's 280 decisions, 280 payments and 280 deliveries, followed by assembly, fixing, styling and a deep clean, all coordinated across several teams.</p>
+        <p class="tip"><strong>Why we focus here:</strong> we studied what guests in the UAE respond to and worked with European designers on pieces that look good, last, and stay cost-effective.</p>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> furnishing it like their own home. It ends up looking like someone's apartment, not a place guests want to book.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>Several weeks of long days</dd>
+        <dt>How often</dt><dd><span class="freq">Once, then replacements</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">5</div>
+      <div>
+        <h3>Take photos that sell the stay</h3>
+        <ul>
+          <li>Use a professional photographer, in daylight, with every light on.</li>
+          <li>Photograph the pool, gym, view and anything special about the building or area.</li>
+          <li>Add close-up detail shots: bedding, the coffee corner, finishes.</li>
+          <li>Make beds and set out towels first, and remove anything personal.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> dark phone photos that make a great unit look average.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>Half a day</dd>
+        <dt>How often</dt><dd><span class="freq">Once</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">6</div>
+      <div>
+        <h3>Create your listings</h3>
+        <ul>
+          <li>Lead with the bedroom. The first thing guests wonder is where they'll sleep.</li>
+          <li>Write a clear title, an honest description, house rules, and your DCT licence number.</li>
+          <li>Abu Dhabi charges a 6% tourism fee on short stays, which you collect and pay to DCT monthly.</li>
+          <li>Airbnb and Booking.com are the main platforms. To list on more, use a channel manager so calendars stay in sync.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> double bookings from managing several platforms by hand.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>4–6 hours</dd>
+        <dt>How often</dt><dd><span class="freq">Once, then updates</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">7</div>
+      <div>
+        <h3>Price for the calendar, not just the week</h3>
+        <p>Weekday and weekend pricing is the easy part. The real money is in special events.</p>
+        <p>Keep an eye on concerts, sports, exhibitions and holidays, and adjust for high season and summer.</p>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> missing an event. A big concert is in town, you're charging 400 a night, and similar units are getting 1,200.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>About 30 minutes a day</dd>
+        <dt>How often</dt><dd><span class="freq forever">Every day</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">8</div>
+      <div>
+        <h3>Look after your guests</h3>
+        <p>Self check-in makes life much easier. Use a smart lock or lock box, and send a detailed message before arrival covering:</p>
+        <ul>
+          <li>How to find the building and the unit.</li>
+          <li>Where the keys are, and what happens if they're lost.</li>
+          <li>Wi-Fi details, parking, and where the garbage room is.</li>
+        </ul>
+        <p>Most communities require you to email them for every booking so the guest gets access. Guests arrive tired and sometimes emotional, so patience matters. Ask for feedback and act on it straight away.</p>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> the 2am message they didn't see, and the guest stuck at the gate because the community was never told.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>30–60 minutes a day, and on call</dd>
+        <dt>How often</dt><dd><span class="freq forever">Every day</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">9</div>
+      <div>
+        <h3>Clean and reset after every stay</h3>
+        <ul>
+          <li>You'll need a cleaning team and a separate laundry service.</li>
+          <li>Keep spare sets of sheets, towels, pillowcases and duvet covers so turnovers never wait on laundry.</li>
+          <li>Use a checklist for every clean, and have someone check it.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> two checkouts on the same day and no clean linen ready.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>Coordinating every checkout</dd>
+        <dt>How often</dt><dd><span class="freq forever">Every booking</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">10</div>
+      <div>
+        <h3>Keep everything working</h3>
+        <ul>
+          <li>Service the AC regularly. In Abu Dhabi, it matters more than anything else.</li>
+          <li>Have a handyman who can come the same day.</li>
+          <li>Replace worn or broken items between guests.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> the AC failing in August with guests inside.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>Unpredictable</dd>
+        <dt>How often</dt><dd><span class="freq forever">Whenever it breaks</span></dd>
+      </dl>
+    </article>
+
+    <article class="step">
+      <div class="num">11</div>
+      <div>
+        <h3>Handle the money and paperwork</h3>
+        <ul>
+          <li>Pay the tourism fee to DCT every month.</li>
+          <li>Track platform payouts, cleaning, laundry, repairs and bills.</li>
+          <li>Renew your licence and insurance every year.</li>
+        </ul>
+        <p class="stuck"><strong>Where owners get it wrong:</strong> never checking whether the unit actually earns more than a yearly lease would.</p>
+      </div>
+      <dl class="effort">
+        <dt>Your time</dt><dd>2–4 hours a month</dd>
+        <dt>How often</dt><dd><span class="freq forever">Every month</span></dd>
+      </dl>
+    </article>
+
+  </div>
+</section>
+
+<section class="reality">
+  <div class="wrap">
+    <h2>The real picture</h2>
+    <p class="sub">Here is what running one unit yourself actually looks like. These are our estimates from running holiday homes in Abu Dhabi.</p>
+    <div class="split">
+      <div class="col">
+        <h3>Getting started</h3>
+        <div class="big">6–8 weeks</div>
+        <p>From checking the location to your first guest, with furnishing taking most of it.</p>
+        <p>Plus the cost of furniture, safety equipment, insurance, photos and licence fees.</p>
+      </div>
+      <div class="col dark">
+        <h3>Every month after that</h3>
+        <div class="big">35–50 hours</div>
+        <p>Pricing, guest messages, cleaners, laundry, repairs and paperwork.</p>
+        <p>And you're on call every day, including holidays and while you travel.</p>
+      </div>
+    </div>
+    <p class="fine">Estimates for one apartment. Time varies with how busy the unit is and how much you already know.</p>
+  </div>
+</section>
+
+<section class="notes" id="notes">
+  <div class="wrap">
+    <h2>Insider notes</h2>
+    <p class="sub">Small things that make a big difference, learned from running units day to day.</p>
+    <div class="note-grid">
+      <div class="note"><h3>Keep supplies simple</h3><p>Don't over-provide water, coffee and snacks. Some guests will take advantage, and it adds up quickly.</p></div>
+      <div class="note"><h3>Refill, don't replace</h3><p>Use refillable shampoo, conditioner and hand soap. If you store spares in the unit, keep them locked away.</p></div>
+      <div class="note"><h3>Control the keys</h3><p>Spare keys should only be held by your cleaning team, never left in the unit.</p></div>
+      <div class="note"><h3>Have a lost and found policy</h3><p>Guests will leave things behind. Decide in advance how long you keep items and how they get returned.</p></div>
+      <div class="note"><h3>Watch the event calendar</h3><p>One missed concert or race weekend can cost you more than a week of normal bookings.</p></div>
+      <div class="note"><h3>Don't forget the community</h3><p>A missed access email means a guest stuck at the gate. Automate it if you can.</p></div>
+      <div class="note"><h3>Always have backup linen</h3><p>Same-day turnovers only work if clean sets are ready before the dirty ones leave.</p></div>
+      <div class="note"><h3>Stay patient</h3><p>Most difficult guests are just tired travellers. A calm, quick reply saves most reviews.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="check">
+  <div class="wrap">
+    <h2>Should you do it yourself?</h2>
+    <p class="sub">Answer five quick questions honestly.</p>
+    <div class="qs">
+      <div class="q"><span>Can you reply to guests within minutes, any time of day?</span><div class="yn" data-q="1"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Do you live close enough to reach the unit the same day?</span><div class="yn" data-q="2"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Do you have a reliable cleaning team and laundry service?</span><div class="yn" data-q="3"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Would you enjoy tracking events and adjusting prices every day?</span><div class="yn" data-q="4"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Do you have 35+ spare hours every month?</span><div class="yn" data-q="5"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+    </div>
+    <div class="result" id="result" role="status" aria-live="polite">
+      <h3 id="r-title"></h3>
+      <p id="r-text"></p>
+    </div>
+  </div>
+</section>
+
+<section class="paths" id="paths">
+  <div class="wrap">
+    <h2>Three ways to do this</h2>
+    <p class="sub">Whichever you choose, you now know what it takes.</p>
+    <div class="path-grid">
+      <div class="path">
+        <h3>Do it all yourself</h3>
+        <p class="who">For owners with time, nearby, and who enjoy it.</p>
+        <ul>
+          <li>Follow the 11 steps above.</li>
+          <li>Keep 100% of the income.</li>
+          <li>Questions along the way? Message us anytime.</li>
+        </ul>
+        <a class="btn" href="https://wa.me/971581855442?text=Hi%2C%20I%27m%20setting%20up%20my%20own%20holiday%20home%20and%20have%20a%20question">Ask us a question</a>
+      </div>
+      <div class="path">
+        <h3>We furnish it, you run it</h3>
+        <p class="who">For owners who want to host but skip the hardest setup step.</p>
+        <ul>
+          <li>A complete, guest-ready furniture package.</li>
+          <li>Delivered and installed in 14 days.</li>
+          <li>You handle steps 5 to 11.</li>
+        </ul>
+        <a class="btn" href="https://wa.me/971581855442?text=Hi%2C%20I%27d%20like%20a%20furniture%20package%20for%20my%20holiday%20home">Get a furniture quote</a>
+      </div>
+      <div class="path main">
+        <h3>We handle everything</h3>
+        <p class="who">For owners who want the income without the work.</p>
+        <ul>
+          <li>Licence, furnishing, photos, listing, pricing, guests, cleaning and maintenance.</li>
+          <li>You get paid every month, with a clear statement.</li>
+          <li>We aim for about 35% more than a yearly lease.</li>
+        </ul>
+        <a class="btn" href="https://wa.me/971581855442?text=Hi%2C%20I%27d%20like%20a%20free%20earnings%20estimate%20for%20my%20unit">Get my free earnings estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Roooms Holiday Homes · Abu Dhabi &amp; Dubai</span>
+    <span><a href="https://wa.me/971581855442">+971 58 185 5442</a> &nbsp; <a href="mailto:marhaba@roooms.ae">marhaba@roooms.ae</a> &nbsp; <a href="https://instagram.com/roooms.ae">@roooms.ae</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var answers = {};
+  var groups = document.querySelectorAll('.yn');
+  var box = document.getElementById('result');
+  var title = document.getElementById('r-title');
+  var text = document.getElementById('r-text');
+  groups.forEach(function(g){
+    g.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        g.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+        b.setAttribute('aria-pressed','true');
+        answers[g.dataset.q] = Number(b.dataset.v);
+        if (Object.keys(answers).length === groups.length) show();
+      });
+    });
+  });
+  function show(){
+    var yes = Object.values(answers).reduce(function(a,b){ return a+b; }, 0);
+    if (yes === 5){
+      title.textContent = 'You could run it yourself.';
+      text.textContent = 'You have the time, the location and the setup. Save this guide, and consider a furniture package to get live faster.';
+    } else if (yes >= 3){
+      title.textContent = 'Possible, but it will be tight.';
+      text.textContent = 'You can cover part of the work, but the steps you answered "no" to are the ones that hurt reviews. Many owners in your position furnish themselves and hand over the daily running.';
+    } else {
+      title.textContent = 'This is a lot to take on alone.';
+      text.textContent = 'Running it yourself would likely cost you time and reviews. Having it fully managed is usually the better return.';
+    }
+    box.classList.add('show');
+  }
+})();
+</script>
+</body>
+</html>
